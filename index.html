@@ -47,32 +47,43 @@
 </style>
 
 <body style="margin-top: 100px;margin-left:100px;margin-right:100px">
-    <div class="container">
-    <center> <span style='font-size:60px'>Is geom_sf in ggplot2 yet?</span>
+    <div class="container"  style="margin-bottom:30px">
+    <center> <span style='font-size:60px'>Is <code>geom_sf</code> in <code>ggplot2</code> yet?</span>
         <br>
         <br>
         <br> <span style='font-size:60px'>NO.</span> </center>
+        
+            <hr style="margin-top:30px;margin-bottom:30px">
 
-        <h2>The version of ggplot2 on CRAN does not yet have support for visualising sf objects.</h2>
-        <h2>Until it does, you <em>could</em> use the dev version - see <a href='https://github.com/tidyverse/ggplot2'>https://github.com/tidyverse/ggplot2</a></h2>
-    
+        <h2>The version of <code>ggplot2</code> on CRAN does not yet have support for visualising <code>sf</code> objects.</h2>
+        <h2>Until it does, you <em>could</em> use the dev version:
+        </h2>
+
+        <pre><h2><code>devtools::install_github("tidyverse/ggplot2")</code></h2></pre>
+        
     </div>
     <hr>
-    <div class="container">
-    <center> <span style='font-size:60px'>Why should I care?</span>
+    <div class="container"  style="margin-top:30px">
+    <center> <span style='font-size:60px'>Wait... <code>sf</code>?</span>
         
         </center>
         
-        <h2>sf is very young (initial development started in 2016) but is highly recommended as the best solution for working with GIS data in R:</h2>
+        
+        <h2><code>sf</code> is a fairly young (first commit in 2016) package for working doing GIS stuff in R.</h2>
+        
+        <h2> It's incredible. You're highly recommend to migrate from <code>sp</code> and/or <code>rgdal</code></h2>
+        
+        <h2>Here are five excellent reasons to use <code>sf</code>:</h2>
         <ul style='font-size:20px'>
-            <li>It fits into the tidyverse (dplyr etc) workflow</li>
-            <li>It simplifies importing GIS datasets</li>
-            <li>It has built in tools for converting to/from other formats, including sp</li>
-            <li>It has built in tools for geomtric calculations (great circles etc)</li>
-            <li>It has the backing of the R Consortium!</li>
+                        <li><code>sf</code> can easily convert to/from <code>sp</code> and other popular GIS ad R data formats.</li>
+                        <li><code>sf</code>simplifies importing GIS datasets compared to both <code>sp</code> and <code>rgdal</code></li>
+            <li><code>sf</code> objects are compatible with a <code>tidyverse</code> (<code>dplyr</code>, <code>tidyr</code> etc) workflow</li>
+
+            <li><code>sf</code> has built in tools for geomtric calculations (union, intersect, area, great circles, etc)</li>
+            <li><code>sf</code> development was initiated with (and continues to receive) R Consortium funding and favour.</li>
         </ul>
     
-        <h2>Read about sf here <a href='https://r-spatial.github.io/sf/'>https://r-spatial.github.io/sf/</a></h2>
+        <h2>Read about <code>sf</code> here <a href='https://r-spatial.github.io/sf/'>https://r-spatial.github.io/sf/</a></h2>
         
     </div>
     
