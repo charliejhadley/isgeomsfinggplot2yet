@@ -3,102 +3,76 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Is geom_sf in ggplot2 yet? - Not just yet</title>
+    <title>Is geom_sf in ggplot2 yet? - YAAAAS</title>
 </head>
+<style>
+    ul li {
+        margin-bottom: 10px;
+    }
     
-    <style>
-    ul li { margin-bottom: 10px; }
-        
-        .footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-        
-                    
-            code {
-    padding: 2px 4px;
-    font-size: 90%;
-    color: #c7254e;
-    background-color: #f9f2f4;
-    border-radius: 4px;
-}
-        
-        pre {
-    font-size: 80%;
-    font-weight: bold;
-    line-height: 120%;
-    padding-top: 0.2em;
-    padding-bottom: 0.2em;
-    padding-left: 1em;
-    padding-right: 1em;
-    border-style: solid;
-    border-left-width: 1em;
-    border-top-width: thin;
-    border-right-width: thin;
-    border-bottom-width: thin;
-    border-color: #95ABD0;
-    color: #00428C;
-    background-color: #E4E5E7;
-}
-        
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    code {
+        padding: 2px 4px;
+        font-size: 90%;
+        color: #c7254e;
+        background-color: #f9f2f4;
+        border-radius: 4px;
+    }
+    
+    pre {
+        font-size: 80%;
+        font-weight: bold;
+        line-height: 120%;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        padding-left: 1em;
+        padding-right: 1em;
+        border-style: solid;
+        border-left-width: 1em;
+        border-top-width: thin;
+        border-right-width: thin;
+        border-bottom-width: thin;
+        border-color: #95ABD0;
+        color: #00428C;
+        background-color: #E4E5E7;
+    }
 </style>
 
 <body style="margin-top: 100px;margin-left:100px;margin-right:100px">
-    <div class="container"  style="margin-bottom:30px">
-    <center> <span style='font-size:60px'>Is <code>geom_sf</code> in <code>ggplot2</code> yet?</span>
-        <br>
-        <br>
-        <br> <span style='font-size:60px'>Not just yet 🙃</span> </center>
-        
-            <hr style="margin-top:30px;margin-bottom:30px">
-
-        <h2>The version of <code>ggplot2</code> on CRAN does not yet have support for visualising <code>sf</code> objects.</h2>
-        <h2>Until it does, you <em>could</em> use the dev version:
-        </h2>
-
-        <pre><h2><code>devtools::install_github("tidyverse/ggplot2")</code></h2></pre>
-        
-    </div>
+    <div class="container" style="margin-bottom:30px">
+        <center> <span style='font-size:60px'>Is <code>geom_sf</code> in <code>ggplot2</code> yet?</span>
+            <br>
+            <br>
+            <br> <span style='font-size:60px'>YAAAAS 😁</span> </center>
+        <hr style="margin-top:30px;margin-bottom:30px">
+        <h2><code>ggplot2</code> now supports the visualisation of <code>sf</code> objects with <code>geom_sf</code></h2> <img src="img/geom_sf.png" width="700px" /></div>
     <hr>
-    <div class="container"  style="margin-top:30px">
-    <center> <span style='font-size:60px'>Wait... <code>sf</code>?</span>
-        
-        </center>
-        
-        
+    <div class="container" style="margin-top:30px">
+        <center> <span style='font-size:60px'>Wait... <code>sf</code>?</span> </center>
         <h2><code>sf</code> is a fairly young (first commit in 2016) package for doing GIS stuff in R.</h2>
-        
         <h2> It's incredible. You're highly recommend to migrate from <code>sp</code> and/or <code>rgdal</code></h2>
-        
         <h2>Here are five excellent reasons to use <code>sf</code>:</h2>
         <ul style='font-size:20px'>
-                        <li><code>sf</code> can easily convert to/from <code>sp</code> and other popular GIS ad R data formats.</li>
-                        <li><code>sf</code>simplifies importing GIS datasets compared to both <code>sp</code> and <code>rgdal</code></li>
+            <li><code>sf</code> can easily convert to/from <code>sp</code> and other popular GIS ad R data formats.</li>
+            <li><code>sf</code>simplifies importing GIS datasets compared to both <code>sp</code> and <code>rgdal</code></li>
             <li><code>sf</code> objects are compatible with a <code>tidyverse</code> (<code>dplyr</code>, <code>tidyr</code> etc) workflow</li>
-
             <li><code>sf</code> has built-in tools for geometric calculations (union, intersect, area, great circles, etc)</li>
             <li><code>sf</code> development was initiated with (and continues to receive) R Consortium funding and favour.</li>
         </ul>
-    
-        <h2>Read about <code>sf</code> here <a href='https://r-spatial.github.io/sf/'>https://r-spatial.github.io/sf/</a></h2>
-        
-    </div>
-    
+        <h2>Read about <code>sf</code> here <a href='https://r-spatial.github.io/sf/'>https://r-spatial.github.io/sf/</a></h2> </div>
     <hr>
-    
     <div class="footer">
-    
-    <h3>Contribute to this page by making a pull request against <a href='https://github.com/martinjhnhadley/isgeomsfinggplot2yet'>martinjhnhadley/isgeomsfinggplot2yet</a></h3>    
-        
-<a href="https://twitter.com/martinjhnhadley" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @martinjhnhadley</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <h3>Contribute to this page by making a pull request against <a href='https://github.com/martinjhnhadley/isgeomsfinggplot2yet'>martinjhnhadley/isgeomsfinggplot2yet</a></h3> <a href="https://twitter.com/martinjhnhadley" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @martinjhnhadley</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         <br>
-        <br>
-        
-    </div>
-    
+        <br> </div>
 </body>
 
 </html>
